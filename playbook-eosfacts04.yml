@@ -1,0 +1,14 @@
+---
+- name: Network Playbook to gather facts
+  hosts: switches
+  gather_facts: yes  # default is yes
+
+  # these vars can be mapped other places
+  # but need to be mapped for ansible to
+  # connect to Arista switches
+
+  tasks:
+  - name: Show registered facts
+    debug:
+      var: ansible_facts
+
