@@ -20,8 +20,8 @@ def fetch_trivia_questions(amount, difficulty):
 def main():
     # Define the module arguments
     module_args = dict(
-        amount=dict(type='str', required=True, "5"),
-        difficulty=dict(type='str', required=True, "easy"),
+        amount=dict(type='str', required=True),
+        difficulty=dict(type='str', required=True),
     )
 
     # Define the result dictionary
